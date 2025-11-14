@@ -38,13 +38,13 @@ span
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40px;
-  height: 40px;
+  width: 4px;
+  height: 4px;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
-              0 0 0 8px rgba(255,255,255,0.1),
-              0 0 0 12px rgba(255,255,255,1);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.1),
+              0 0 0 2px rgba(255,255,255,0.1),
+              0 0 20px rgba(255,255,255,0.5);
   animation: animate 3s linear infinite;
 }
 span::before{
@@ -52,7 +52,7 @@ span::before{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 300px;
+  width: 150px;
   height: 1px;
   background: linear-gradient(90deg,#fff, transparent);
 }
@@ -71,25 +71,141 @@ span::before{
     opacity: 0;
   }
 }
-span:nth-child(1)
-{
+/* Bright, close shooting stars */
+span:nth-child(1) {
   top: 0;
   right: 0;
   animation-delay: 0;
   animation-duration: 1s;
-
+  opacity: 1;
 }
-span:nth-child(2){
+span:nth-child(2) {
   top: 0;
   right: 80px;
-  animation-delay: -0.2s;
+  animation-delay: 0.2s;
   animation-duration: 3s;
+  opacity: 0.9;
+  background: #e0f2fe;
 }
-span:nth-child(3){
+span:nth-child(3) {
   top: 80px;
   right: 0%;
   animation-delay: 0.4s;
   animation-duration: 2s;
+  opacity: 0.85;
+}
+span:nth-child(4) {
+  top: 10%;
+  right: 30%;
+  animation-delay: 0.6s;
+  animation-duration: 2.5s;
+  opacity: 0.7;
+  width: 3px;
+  height: 3px;
+  background: #bae6fd;
+}
+span:nth-child(5) {
+  top: 20%;
+  right: 50%;
+  animation-delay: 1s;
+  animation-duration: 3.5s;
+  opacity: 0.8;
+  background: #f0f9ff;
+}
+/* Distant, dimmer shooting stars */
+span:nth-child(6) {
+  top: 40%;
+  right: 10%;
+  animation-delay: 1.2s;
+  animation-duration: 4s;
+  opacity: 0.5;
+  width: 2px;
+  height: 2px;
+  background: #cbd5e1;
+}
+span:nth-child(7) {
+  top: 60%;
+  right: 70%;
+  animation-delay: 1.8s;
+  animation-duration: 3.2s;
+  opacity: 0.6;
+  width: 2.5px;
+  height: 2.5px;
+  background: #e2e8f0;
+}
+span:nth-child(8) {
+  top: 15%;
+  right: 60%;
+  animation-delay: 2.2s;
+  animation-duration: 2.8s;
+  opacity: 0.65;
+  width: 3px;
+  height: 3px;
+}
+span:nth-child(9) {
+  top: 35%;
+  right: 85%;
+  animation-delay: 2.6s;
+  animation-duration: 3.8s;
+  opacity: 0.55;
+  width: 2px;
+  height: 2px;
+  background: #94a3b8;
+}
+span:nth-child(10) {
+  top: 50%;
+  right: 25%;
+  animation-delay: 3s;
+  animation-duration: 2.2s;
+  opacity: 0.75;
+  background: #dbeafe;
+}
+span:nth-child(11) {
+  top: 70%;
+  right: 45%;
+  animation-delay: 0.8s;
+  animation-duration: 3.6s;
+  opacity: 0.5;
+  width: 2px;
+  height: 2px;
+  background: #cbd5e1;
+}
+span:nth-child(12) {
+  top: 25%;
+  right: 15%;
+  animation-delay: 1.5s;
+  animation-duration: 2.9s;
+  opacity: 0.7;
+  width: 3px;
+  height: 3px;
+  background: #e0f2fe;
+}
+span:nth-child(13) {
+  top: 55%;
+  right: 90%;
+  animation-delay: 2s;
+  animation-duration: 3.3s;
+  opacity: 0.6;
+  width: 2.5px;
+  height: 2.5px;
+}
+span:nth-child(14) {
+  top: 5%;
+  right: 55%;
+  animation-delay: 0.3s;
+  animation-duration: 2.6s;
+  opacity: 0.8;
+  background: #f0f9ff;
+}
+span:nth-child(15) {
+  top: 45%;
+  right: 35%;
+  animation-delay: 2.8s;
+  animation-duration: 3.1s;
+  opacity: 0.55;
+  width: 2px;
+  height: 2px;
+  background: #94a3b8;
 }
 @layer utilities {
   @keyframes loading {
